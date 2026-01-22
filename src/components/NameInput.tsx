@@ -6,12 +6,12 @@ export const NameInput = () => {
   const [nameInput, setNameInput] = useState("");
 
   const handleKeyUpAction = (event: KeyboardEvent<HTMLInputElement>) => {
-    if(event.code.toLocaleLowerCase()==="enter") {
-      if(nameInput.trim() !== "" && nameInput !== "bot") {
+    if (event.code.toLocaleLowerCase() === "enter") {
+      if (nameInput.trim() !== "" && nameInput !== "bot") {
         userCtx?.setUser(nameInput.trim());
       }
     }
-  }
+  };
 
   return (
     <div className="mt-20">
