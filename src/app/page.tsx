@@ -10,7 +10,6 @@ const Page = () => {
       <UserProvider>
         <ChatProvider>
           <h1 className="text-3xl my-10 text-center">Chat</h1>
-
           <Chat />
         </ChatProvider>
       </UserProvider>
